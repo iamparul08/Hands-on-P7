@@ -1,11 +1,14 @@
 
+num1_UserID = int(input("Enter 100 "))
+
 try:
-    num1_UserID = int(input("Enter 100 "))
+    print("Resource open.")
     sum1_UserID = num1_UserID + num2_UserID
     print(sum1_UserID)
 
-except:
-    print("NameError exception generated.")
+except Exception as e:
+    print(e)
+    print("\n Resource closed.")
 
 finally:
-    print("try catch ended.")
+    print("Try catch ended.")
